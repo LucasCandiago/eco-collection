@@ -1,0 +1,187 @@
+html,
+body {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  backface-visibility: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+a {
+  color: unset !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: unset;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none !important;
+}
+
+.topico-icon {
+  height: 80px;
+}
+
+.main_h {
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  background: none;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -100px;
+}
+
+.open-nav {
+  max-height: 400px !important;
+}
+
+.open-nav .mobile-toggle {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+  background-color: #ffffff;
+  opacity: 1;
+  top: 0px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.navbar-brand{
+  width: 200px;
+  height: 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../imagens/logo.png);
+}
+
+.navbar-nav a {
+  color: #585858 !important;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s;
+  font-weight: 400;
+  margin: 0px 10px !important;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgba(149, 167, 200, 0);
+}
+
+.navbar-nav a:hover {
+  box-sizing: border-box;
+  border-bottom: 2px solid #72b700;
+  text-decoration: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+
+.letter {
+  letter-spacing: 0.3rem;
+}
+
+.letter-2 {
+  letter-spacing: 0.7rem;
+}
+
+.instagram-image {
+  height: 300px;
+}
+
+.carousel-container {
+  padding-top: 50px; /* Preenchimento superior para criar espaço acima do carrossel */
+}
+
+#insta-carousel {
+  margin-top: -10%; /* Margem superior negativa igual ao valor do preenchimento superior */
+}
+
+#insta-carousel .owl-prev,
+#insta-carousel .owl-next {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  font-size: 25px;
+  outline: none !important;
+  margin-top: -15px;
+}
+
+#insta-carousel .owl-prev, #carousel-beneficios .owl-prev {
+  float: left;
+  /* background-image: url(../imagens/slices/left.png); */
+  left: -2%;
+  position: absolute;
+  opacity: 1 !important;
+  color: #282828 !important;
+}
+
+#insta-carousel .owl-next, #carousel-beneficios .owl-next {
+  float: right;
+  /* background-image: url(../imagens/slices/right.png); */
+  /* margin-right: -6%; */
+  position: absolute;
+  opacity: 1 !important;
+  color: #282828 !important;
+  left: 99%;
+}
+
+#insta-carousel .owl-prev span,
+#insta-carousel .owl-next span,
+#insta-carousel .owl-dots {
+  display: none !important;
+}
+
+.lixeira-pontos {
+  position: absolute;
+  margin-left: 55%;
+  margin-top: 2%;
+}
+
+#carousel-beneficios .owl-prev,
+#carousel-beneficios .owl-next {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  font-size: 90px;
+  opacity: 1 !important;
+  outline: none !important;
+  margin-top: -290px;
+}
+
+.card-pontos {
+  -webkit-box-shadow: 3px 3px 9px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 9px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 9px -1px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 900px) {
+  #insta-carousel .owl-prev {
+    left: -5%;
+  }
+
+  #insta-carousel .owl-next {
+    left: 99%;
+  }
+
+  #carousel-beneficios .owl-prev {
+    left: -6%;
+  }
+
+  #carousel-beneficios .owl-next {
+    left: 95%;
+  }
+
+  #insta-carousel .owl-prev,
+  #insta-carousel .owl-next {
+    margin-top: -15px;
+  }
+}
